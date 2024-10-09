@@ -38,14 +38,14 @@
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '   | 
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | ESC  |
-            //                    | ALT | L01 |L2SPC|   |L3ENT|L1GUI| GUI |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | SHFT |
+            //                    | ALT | L01 |L2SPC|   |L3ENT|L1GUI| ESC |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R   &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&td0       &kp Z  &kp X  &kp C     &kp V   &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LALT  &mo 1   &lt 2 SPACE    &lt 2 ENTER  &mo 1 GUI  &kp GUI
+&kp TAB    &kp Q  &kp W  &kp E     &kp R   &kp T          &kp Y        &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G          &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&td0       &kp Z  &kp X  &kp C     &kp V   &kp B          &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &td0
+                         &kp LALT  &mo 1   &lt 2 SPACE    &lt 2 ENTER  &lt 1 GUI  &kp ESC
             >;
         };
 
@@ -59,10 +59,10 @@
             //                    | ALT |     | L03 |   |  [  |  ]  | P_B |
 
             bindings = <
-&trans  &kp MINUS  &kp N7   &kp N8  &kp N9  &kp EQUAL   &kp AMPS  &kp LPAR  &kp RPAR  &kp EXCL   &kp INS    &kp DEL
-&trans  &kp FSLH   &kp N4   &kp N5  &kp N6  &kp N0      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp HOME   &kp END
-&trans  &kp ASTRK  &kp N3   &kp N2  &kp N3  &kp PLUS    &kp PIPE  &kp LBRC  &kp RBRC  &kp UNDER  &kp PG_UP  &kp PG_DN
-                            &BSLH   &trans  &lt 3       &kp LBKT  &kp RBKT  &kp PAUSE_BREAK
+&trans  &kp MINUS  &kp N7   &kp N8    &kp N9  &kp EQUAL   &kp AMPS  &kp LPAR  &kp RPAR  &kp EXCL   &kp INS    &kp DEL
+&trans  &kp FSLH   &kp N4   &kp N5    &kp N6  &kp N0      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp HOME   &kp END
+&trans  &kp ASTRK  &kp N3   &kp N2    &kp N3  &kp PLUS    &kp PIPE  &kp LBRC  &kp RBRC  &kp UNDER  &kp PG_UP  &kp PG_DN
+                            &kp BSLH  &trans  &mo 3       &kp LBKT  &kp RBKT  &kp PAUSE_BREAK
             >;
         };
 
